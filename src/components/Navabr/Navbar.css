@@ -1,0 +1,148 @@
+.nav{
+  
+    padding: 1rem;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ul-li{
+    font-size: 1rem;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    cursor: pointer;
+
+}
+
+.icon-sign{
+    position: relative;
+    font-size: 1rem;
+    display: flex;
+    gap: 2.5rem;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dot{
+    position: absolute;
+    top: 0px;
+    right: 9rem;
+    background-color: coral;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+
+}
+
+.sign{
+    width: 7rem;
+    border: 2px solid black;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 2rem;
+
+}
+
+.img1{
+    height: 2rem;
+}
+
+.img2{
+    height: 2rem;
+}
+
+.active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid red;
+
+}
+.btn-menu{
+    display: none;
+}
+
+@media screen and (max-width:900px) {
+    .nav-mobile{
+        position: absolute;
+      
+        top: 0;
+        left: 0;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.188);
+        backdrop-filter: blur(15px);
+        /* color: white; */
+        display: flex;
+        justify-content:flex-start;
+        flex-direction:column;
+        
+
+    }
+
+    .btn-menu{
+        display: block;
+    }
+    /* .menu-ul-two{
+        display: block;
+        z-index: 1;
+    } */
+
+    .icon-sign{
+        display: none;
+        margin-top: 2rem;
+    }
+    
+    .icon-sign1{
+        display: block;
+        margin-top: 2rem;
+    }
+
+    .menu-ul{
+        margin-top: 3rem;
+        display: none;
+
+    }
+    .ul-li{
+      
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        /* visibility:hidden; */
+        /* display: none; */
+        
+    }
+    .ul-li1{
+        display: block;
+    }
+    .img-tom{
+      height: 1.5rem;
+    }
+
+    .cursor-pointer{
+       
+        /* height: 100%; */
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .img1{
+        display: none;
+    }
+    /* .img2{
+        visibility: hidden;
+    } */
+    /* .img2{
+        visibility: visible;
+    } */
+    .dot{
+        display: none;
+    }
+    .sign{
+        display: none;
+    }
+}
